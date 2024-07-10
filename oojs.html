@@ -17,6 +17,73 @@
       for more information).
     </p>
 
-    <script></script>
+    <script>
+      //   const person = {
+      //     name: {
+      //       first: "Bob",
+      //       last: "Smith",
+      //     },
+      //     age: 32,
+      //     bio() {
+      //       console.log(
+      //         `${this.name[0]} ${this.name[1]} is ${this.age} years old.`
+      //       );
+      //     },
+      //     introduceSelf() {
+      //       console.log(`Hi! I'm ${this.name[0]}.`);
+      //     },
+      //   };
+
+      //   const myDataName = "height";
+      //   const myDataValue = "1.75m";
+      //   person[myDataName] = myDataValue;
+
+      //   person.age = 45;
+      //   person.name.last = "Cratchit";
+
+      //   person["eyes"] = "hazel";
+      //   person.farewell = function () {
+      //     console.log("Bye everybody!");
+      //   };
+
+      function Dog(name, breed, color, street) {
+        this.name = name;
+        this.breed = breed;
+        this.color = color;
+        this.street = street;
+        this.greeting = () => {
+          console.log(`Hello, woofed ${this.name} of ${this.street}`);
+        };
+      }
+
+      const teddy = new Dog("Teddy", "labrador", "black", "Church Street");
+      console.log(teddy.greeting());
+
+      const chomley = new Dog(
+        "Chomley",
+        "St Bernard",
+        "brown",
+        "Bimley Street"
+      );
+      console.log(chomley.greeting());
+
+      //   const cat = {
+      // //     name: "Bertie",
+      //     breed: "Cymric",
+      //     color: "white",
+      //     greeting() {
+      //       console.log(`Hello, said ${this.name} the ${this.breed}`);
+      //     },
+      //   };
+
+      //   const catTwo = {
+      //     name: "Roger",
+      //     breed: "Labrador",
+      //     color: "black",
+      //     greeting() {
+      //       console.log(`Hello, said ${this.name} the ${this.breed}`);
+      //     },
+      //   };
+    </script>
   </body>
 </html>
