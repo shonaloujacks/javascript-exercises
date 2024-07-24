@@ -13,8 +13,8 @@ const sum = function(array) {
 	
 };
 
-const multiply = function(a, b) {
-  return a * b;
+const multiply = function(array) {
+  return array.reduce ((sum, current) => sum * current);
 };
 
 const power = function(a, b) {
@@ -24,7 +24,7 @@ const power = function(a, b) {
 
 const factorial = function(a) {
   let total = 1;
-	for (a; a > 0 ; a--) {
+	for (a; a > 1 ; a--) {
     total *= a; 
   }
   return total;
